@@ -1,0 +1,3092 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Airline Map</title>
+    <style type="text/css">
+        #card {
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            width: 370px;
+            height: 250px;
+            border: 1px dashed #164aa4;
+            background-color: #cce3ff;
+            text-align: center;
+            z-index: 100;
+        }
+
+        .left {
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin-right: -100%;
+        }
+
+        .right {
+            float: right;
+            width: 100%;
+        }
+
+        .right-content {
+            height: 100%;
+            margin-left: 100px;
+            background-color: #cce3ff;
+        }
+    </style>
+    
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+    
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/world.js"></script>
+    
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/romantic.js"></script>
+    
+</head>
+
+<body bgcolor="#F0E8CD">
+    <div id="card" style="display:none;">
+        <div style="margin: 1em;">
+            <div class="left">
+                <img id="picture" src="\templates\image\Tom.png" width="100%">
+            </div>
+            <div class="right">
+                <div class="right-content">
+                    <b id="name">Name</b>
+                    <div style="margin: 1em 1em 1em 2em;">
+                        <div style="float: left; width: 50%;">
+                            <p style="font-size:70%" align="left">国籍</p>
+                            <p style="font-size:70%" align="left" id="nation">nation</p>
+                            <p style=" font-size:70%" align="left">性别</p>
+                            <p style="font-size:70%" align="left" id="sex">sex</p>
+                            <p style=" font-size:70%" align="left">出生日期</p>
+                            <p style="font-size:70%" align="left" id="birth">birthday</p>
+                        </div>
+                        <div style=" float: right;  width: 50%;">
+                            <p style="font-size:70%" align="left">公司</p>
+                            <p style="font-size:70%" align="left" id="company">company</p>
+                            <p style=" font-size:70%" align="left">住所</p>
+                            <p style="font-size:70%" align="left" id="address">address</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="airline" style="width:100%; height:760px;"></div>
+    <script>
+        var chart_airline = echarts.init(
+            document.getElementById('airline'), 'romantic', {renderer: 'canvas'});
+        
+        var option_airline = {
+    "series": [
+        {
+            "type": "effectScatter",
+            "coordinateSystem": "geo",
+            "showEffectOn": "render",
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Amsterdam Airport Schiphol",
+                    "value": [
+                        4.76389,
+                        52.308601,
+                        []
+                    ]
+                },
+                {
+                    "name": "Suvarnabhumi Airport",
+                    "value": [
+                        100.7470016,
+                        13.68109989,
+                        []
+                    ]
+                },
+                {
+                    "name": "Suvarnabhumi Airport",
+                    "value": [
+                        100.7470016,
+                        13.68109989,
+                        []
+                    ]
+                },
+                {
+                    "name": "Amsterdam Airport Schiphol",
+                    "value": [
+                        4.76389,
+                        52.308601,
+                        []
+                    ]
+                },
+                {
+                    "name": "Chicago Midway International Airport",
+                    "value": [
+                        -87.75240326,
+                        41.7859993,
+                        []
+                    ]
+                },
+                {
+                    "name": "Brunei International Airport",
+                    "value": [
+                        114.9280014,
+                        4.944200039,
+                        []
+                    ]
+                },
+                {
+                    "name": "Phoenix Sky Harbor International Airport",
+                    "value": [
+                        -112.012001,
+                        33.43429947,
+                        []
+                    ]
+                },
+                {
+                    "name": "Orlando International Airport",
+                    "value": [
+                        -81.30899811,
+                        28.42939949,
+                        []
+                    ]
+                },
+                {
+                    "name": "Orlando International Airport",
+                    "value": [
+                        -81.30899811,
+                        28.42939949,
+                        []
+                    ]
+                },
+                {
+                    "name": "Phoenix Sky Harbor International Airport",
+                    "value": [
+                        -112.012001,
+                        33.43429947,
+                        []
+                    ]
+                },
+                {
+                    "name": "La Guardia Airport",
+                    "value": [
+                        -73.87259674,
+                        40.77719879,
+                        []
+                    ]
+                },
+                {
+                    "name": "Denver International Airport",
+                    "value": [
+                        -104.6729965,
+                        39.86169815,
+                        []
+                    ]
+                },
+                {
+                    "name": "Denver International Airport",
+                    "value": [
+                        -104.6729965,
+                        39.86169815,
+                        []
+                    ]
+                },
+                {
+                    "name": "La Guardia Airport",
+                    "value": [
+                        -73.87259674,
+                        40.77719879,
+                        []
+                    ]
+                },
+                {
+                    "name": "Dyess Air Force Base",
+                    "value": [
+                        -99.854599,
+                        32.42079926,
+                        []
+                    ]
+                },
+                {
+                    "name": "La Guardia Airport",
+                    "value": [
+                        -73.87259674,
+                        40.77719879,
+                        []
+                    ]
+                },
+                {
+                    "name": "La Guardia Airport",
+                    "value": [
+                        -73.87259674,
+                        40.77719879,
+                        []
+                    ]
+                },
+                {
+                    "name": "Dyess Air Force Base",
+                    "value": [
+                        -99.854599,
+                        32.42079926,
+                        []
+                    ]
+                },
+                {
+                    "name": "La Guardia Airport",
+                    "value": [
+                        -73.87259674,
+                        40.77719879,
+                        []
+                    ]
+                },
+                {
+                    "name": "Dyess Air Force Base",
+                    "value": [
+                        -99.854599,
+                        32.42079926,
+                        []
+                    ]
+                },
+                {
+                    "name": "Dyess Air Force Base",
+                    "value": [
+                        -99.854599,
+                        32.42079926,
+                        []
+                    ]
+                },
+                {
+                    "name": "La Guardia Airport",
+                    "value": [
+                        -73.87259674,
+                        40.77719879,
+                        []
+                    ]
+                },
+                {
+                    "name": "Lipetsk Air Base",
+                    "value": [
+                        39.44499969,
+                        52.63499832,
+                        []
+                    ]
+                },
+                {
+                    "name": "Miami International Airport",
+                    "value": [
+                        -80.29060364,
+                        25.79319954,
+                        []
+                    ]
+                },
+                {
+                    "name": "Miami International Airport",
+                    "value": [
+                        -80.29060364,
+                        25.79319954,
+                        []
+                    ]
+                },
+                {
+                    "name": "Lipetsk Air Base",
+                    "value": [
+                        39.44499969,
+                        52.63499832,
+                        []
+                    ]
+                },
+                {
+                    "name": "Phoenix Sky Harbor International Airport",
+                    "value": [
+                        -112.012001,
+                        33.43429947,
+                        []
+                    ]
+                },
+                {
+                    "name": "General Edward Lawrence Logan International Airport",
+                    "value": [
+                        -71.00520325,
+                        42.36429977,
+                        []
+                    ]
+                },
+                {
+                    "name": "General Edward Lawrence Logan International Airport",
+                    "value": [
+                        -71.00520325,
+                        42.36429977,
+                        []
+                    ]
+                },
+                {
+                    "name": "Phoenix Sky Harbor International Airport",
+                    "value": [
+                        -112.012001,
+                        33.43429947,
+                        []
+                    ]
+                },
+                {
+                    "name": "Taiwan Taoyuan International Airport",
+                    "value": [
+                        121.233002,
+                        25.0777,
+                        []
+                    ]
+                },
+                {
+                    "name": "John F Kennedy International Airport",
+                    "value": [
+                        -73.77890015,
+                        40.63980103,
+                        []
+                    ]
+                },
+                {
+                    "name": "John F Kennedy International Airport",
+                    "value": [
+                        -73.77890015,
+                        40.63980103,
+                        []
+                    ]
+                },
+                {
+                    "name": "Taiwan Taoyuan International Airport",
+                    "value": [
+                        121.233002,
+                        25.0777,
+                        []
+                    ]
+                },
+                {
+                    "name": "Taiwan Taoyuan International Airport",
+                    "value": [
+                        121.233002,
+                        25.0777,
+                        []
+                    ]
+                },
+                {
+                    "name": "Guangzhou Baiyun International Airport",
+                    "value": [
+                        113.2990036,
+                        23.39240074,
+                        []
+                    ]
+                },
+                {
+                    "name": "Guangzhou Baiyun International Airport",
+                    "value": [
+                        113.2990036,
+                        23.39240074,
+                        []
+                    ]
+                },
+                {
+                    "name": "Taiwan Taoyuan International Airport",
+                    "value": [
+                        121.233002,
+                        25.0777,
+                        []
+                    ]
+                },
+                {
+                    "name": "Sochi International Airport",
+                    "value": [
+                        39.9566,
+                        43.449902,
+                        []
+                    ]
+                },
+                {
+                    "name": "Tianjin Binhai International Airport",
+                    "value": [
+                        117.3460007,
+                        39.12440109,
+                        []
+                    ]
+                },
+                {
+                    "name": "Miami International Airport",
+                    "value": [
+                        -80.29060364,
+                        25.79319954,
+                        []
+                    ]
+                },
+                {
+                    "name": "Columbia Metropolitan Airport",
+                    "value": [
+                        -81.11949921,
+                        33.93880081,
+                        []
+                    ]
+                },
+                {
+                    "name": "Columbia Metropolitan Airport",
+                    "value": [
+                        -81.11949921,
+                        33.93880081,
+                        []
+                    ]
+                },
+                {
+                    "name": "Miami International Airport",
+                    "value": [
+                        -80.29060364,
+                        25.79319954,
+                        []
+                    ]
+                },
+                {
+                    "name": "Lipetsk Air Base",
+                    "value": [
+                        39.44499969,
+                        52.63499832,
+                        []
+                    ]
+                },
+                {
+                    "name": "Dyess Air Force Base",
+                    "value": [
+                        -99.854599,
+                        32.42079926,
+                        []
+                    ]
+                },
+                {
+                    "name": "Dyess Air Force Base",
+                    "value": [
+                        -99.854599,
+                        32.42079926,
+                        []
+                    ]
+                },
+                {
+                    "name": "Lipetsk Air Base",
+                    "value": [
+                        39.44499969,
+                        52.63499832,
+                        []
+                    ]
+                },
+                {
+                    "name": "Guangzhou Baiyun International Airport",
+                    "value": [
+                        113.2990036,
+                        23.39240074,
+                        []
+                    ]
+                },
+                {
+                    "name": "Lipetsk Air Base",
+                    "value": [
+                        39.44499969,
+                        52.63499832,
+                        []
+                    ]
+                },
+                {
+                    "name": "Lipetsk Air Base",
+                    "value": [
+                        39.44499969,
+                        52.63499832,
+                        []
+                    ]
+                },
+                {
+                    "name": "Guangzhou Baiyun International Airport",
+                    "value": [
+                        113.2990036,
+                        23.39240074,
+                        []
+                    ]
+                },
+                {
+                    "name": "Lipetsk Air Base",
+                    "value": [
+                        39.44499969,
+                        52.63499832,
+                        []
+                    ]
+                },
+                {
+                    "name": "Beijing Capital International Airport",
+                    "value": [
+                        116.5849991,
+                        40.08010101,
+                        []
+                    ]
+                },
+                {
+                    "name": "Beijing Capital International Airport",
+                    "value": [
+                        116.5849991,
+                        40.08010101,
+                        []
+                    ]
+                },
+                {
+                    "name": "Lipetsk Air Base",
+                    "value": [
+                        39.44499969,
+                        52.63499832,
+                        []
+                    ]
+                },
+                {
+                    "name": "Beijing Capital International Airport",
+                    "value": [
+                        116.5849991,
+                        40.08010101,
+                        []
+                    ]
+                },
+                {
+                    "name": "Chicago Midway International Airport",
+                    "value": [
+                        -87.75240326,
+                        41.7859993,
+                        []
+                    ]
+                },
+                {
+                    "name": "Chicago Midway International Airport",
+                    "value": [
+                        -87.75240326,
+                        41.7859993,
+                        []
+                    ]
+                },
+                {
+                    "name": "Beijing Capital International Airport",
+                    "value": [
+                        116.5849991,
+                        40.08010101,
+                        []
+                    ]
+                },
+                {
+                    "name": "Beijing Capital International Airport",
+                    "value": [
+                        116.5849991,
+                        40.08010101,
+                        []
+                    ]
+                },
+                {
+                    "name": "Chicago Midway International Airport",
+                    "value": [
+                        -87.75240326,
+                        41.7859993,
+                        []
+                    ]
+                },
+                {
+                    "name": "Chicago Midway International Airport",
+                    "value": [
+                        -87.75240326,
+                        41.7859993,
+                        []
+                    ]
+                },
+                {
+                    "name": "Beijing Capital International Airport",
+                    "value": [
+                        116.5849991,
+                        40.08010101,
+                        []
+                    ]
+                },
+                {
+                    "name": "Mac Dill Air Force Base",
+                    "value": [
+                        -82.52120209,
+                        27.84930038,
+                        []
+                    ]
+                },
+                {
+                    "name": "Al Maktoum International Airport",
+                    "value": [
+                        55.161389,
+                        24.896356,
+                        []
+                    ]
+                },
+                {
+                    "name": "Al Maktoum International Airport",
+                    "value": [
+                        55.161389,
+                        24.896356,
+                        []
+                    ]
+                },
+                {
+                    "name": "Mac Dill Air Force Base",
+                    "value": [
+                        -82.52120209,
+                        27.84930038,
+                        []
+                    ]
+                },
+                {
+                    "name": "Dubai International Airport",
+                    "value": [
+                        55.36439896,
+                        25.25279999,
+                        []
+                    ]
+                },
+                {
+                    "name": "Val de Cans/J\u00falio Cezar Ribeiro International Airport",
+                    "value": [
+                        -48.47629929,
+                        -1.37925005,
+                        []
+                    ]
+                },
+                {
+                    "name": "Val de Cans/J\u00falio Cezar Ribeiro International Airport",
+                    "value": [
+                        -48.47629929,
+                        -1.37925005,
+                        []
+                    ]
+                },
+                {
+                    "name": "Dubai International Airport",
+                    "value": [
+                        55.36439896,
+                        25.25279999,
+                        []
+                    ]
+                },
+                {
+                    "name": "Dubai International Airport",
+                    "value": [
+                        55.36439896,
+                        25.25279999,
+                        []
+                    ]
+                },
+                {
+                    "name": "Beijing Capital International Airport",
+                    "value": [
+                        116.5849991,
+                        40.08010101,
+                        []
+                    ]
+                },
+                {
+                    "name": "Beijing Capital International Airport",
+                    "value": [
+                        116.5849991,
+                        40.08010101,
+                        []
+                    ]
+                },
+                {
+                    "name": "Dubai International Airport",
+                    "value": [
+                        55.36439896,
+                        25.25279999,
+                        []
+                    ]
+                },
+                {
+                    "name": "Dubai International Airport",
+                    "value": [
+                        55.36439896,
+                        25.25279999,
+                        []
+                    ]
+                },
+                {
+                    "name": "Koltsovo Airport",
+                    "value": [
+                        60.80270004,
+                        56.74309921,
+                        []
+                    ]
+                },
+                {
+                    "name": "Koltsovo Airport",
+                    "value": [
+                        60.80270004,
+                        56.74309921,
+                        []
+                    ]
+                },
+                {
+                    "name": "Dubai International Airport",
+                    "value": [
+                        55.36439896,
+                        25.25279999,
+                        []
+                    ]
+                },
+                {
+                    "name": "Dubai International Airport",
+                    "value": [
+                        55.36439896,
+                        25.25279999,
+                        []
+                    ]
+                },
+                {
+                    "name": "Milano Linate Airport",
+                    "value": [
+                        9.27674,
+                        45.445099,
+                        []
+                    ]
+                },
+                {
+                    "name": "Milano Linate Airport",
+                    "value": [
+                        9.27674,
+                        45.445099,
+                        []
+                    ]
+                },
+                {
+                    "name": "Dubai International Airport",
+                    "value": [
+                        55.36439896,
+                        25.25279999,
+                        []
+                    ]
+                },
+                {
+                    "name": "Dubai International Airport",
+                    "value": [
+                        55.36439896,
+                        25.25279999,
+                        []
+                    ]
+                },
+                {
+                    "name": "Luis Munoz Marin International Airport",
+                    "value": [
+                        -66.00180054,
+                        18.43939972,
+                        []
+                    ]
+                },
+                {
+                    "name": "Luis Munoz Marin International Airport",
+                    "value": [
+                        -66.00180054,
+                        18.43939972,
+                        []
+                    ]
+                },
+                {
+                    "name": "Dubai International Airport",
+                    "value": [
+                        55.36439896,
+                        25.25279999,
+                        []
+                    ]
+                },
+                {
+                    "name": "Dubai International Airport",
+                    "value": [
+                        55.36439896,
+                        25.25279999,
+                        []
+                    ]
+                },
+                {
+                    "name": "Shanghai Pudong International Airport",
+                    "value": [
+                        121.8050003,
+                        31.14340019,
+                        []
+                    ]
+                },
+                {
+                    "name": "Shanghai Pudong International Airport",
+                    "value": [
+                        121.8050003,
+                        31.14340019,
+                        []
+                    ]
+                },
+                {
+                    "name": "Dubai International Airport",
+                    "value": [
+                        55.36439896,
+                        25.25279999,
+                        []
+                    ]
+                }
+            ],
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Alexander",
+            "coordinateSystem": "geo",
+            "zlevel": 3,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 6,
+                "color": "#ffa022",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Amsterdam Airport Schiphol->Suvarnabhumi Airport",
+                    "coords": [
+                        [
+                            4.76389,
+                            52.308601
+                        ],
+                        [
+                            100.7470016,
+                            13.68109989
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#ffa022"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Alexander",
+            "coordinateSystem": "geo",
+            "zlevel": 4,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 10,
+                "color": "#a6c84c",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Suvarnabhumi Airport->Amsterdam Airport Schiphol",
+                    "coords": [
+                        [
+                            100.7470016,
+                            13.68109989
+                        ],
+                        [
+                            4.76389,
+                            52.308601
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#a6c84c"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Aubrey",
+            "coordinateSystem": "geo",
+            "zlevel": 5,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 8,
+                "color": "#a6c84c",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Chicago Midway International Airport->Brunei International Airport",
+                    "coords": [
+                        [
+                            -87.75240326,
+                            41.7859993
+                        ],
+                        [
+                            114.9280014,
+                            4.944200039
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#a6c84c"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Amanda",
+            "coordinateSystem": "geo",
+            "zlevel": 6,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 10,
+                "color": "#46bee9",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Phoenix Sky Harbor International Airport->Orlando International Airport",
+                    "coords": [
+                        [
+                            -112.012001,
+                            33.43429947
+                        ],
+                        [
+                            -81.30899811,
+                            28.42939949
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#46bee9"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Amanda",
+            "coordinateSystem": "geo",
+            "zlevel": 7,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 7,
+                "color": "#46bee9",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Orlando International Airport->Phoenix Sky Harbor International Airport",
+                    "coords": [
+                        [
+                            -81.30899811,
+                            28.42939949
+                        ],
+                        [
+                            -112.012001,
+                            33.43429947
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#46bee9"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Ben",
+            "coordinateSystem": "geo",
+            "zlevel": 8,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 10,
+                "color": "#ffa022",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "La Guardia Airport->Denver International Airport",
+                    "coords": [
+                        [
+                            -73.87259674,
+                            40.77719879
+                        ],
+                        [
+                            -104.6729965,
+                            39.86169815
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#ffa022"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Ben",
+            "coordinateSystem": "geo",
+            "zlevel": 9,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 9,
+                "color": "#ffa022",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Denver International Airport->La Guardia Airport",
+                    "coords": [
+                        [
+                            -104.6729965,
+                            39.86169815
+                        ],
+                        [
+                            -73.87259674,
+                            40.77719879
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#ffa022"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Ben",
+            "coordinateSystem": "geo",
+            "zlevel": 10,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 7,
+                "color": "#46bee9",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Dyess Air Force Base->La Guardia Airport",
+                    "coords": [
+                        [
+                            -99.854599,
+                            32.42079926
+                        ],
+                        [
+                            -73.87259674,
+                            40.77719879
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#46bee9"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Ben",
+            "coordinateSystem": "geo",
+            "zlevel": 11,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 8,
+                "color": "#46bee9",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "La Guardia Airport->Dyess Air Force Base",
+                    "coords": [
+                        [
+                            -73.87259674,
+                            40.77719879
+                        ],
+                        [
+                            -99.854599,
+                            32.42079926
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#46bee9"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Chloe",
+            "coordinateSystem": "geo",
+            "zlevel": 12,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4,
+                "color": "#46bee9",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "La Guardia Airport->Dyess Air Force Base",
+                    "coords": [
+                        [
+                            -73.87259674,
+                            40.77719879
+                        ],
+                        [
+                            -99.854599,
+                            32.42079926
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#46bee9"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Chloe",
+            "coordinateSystem": "geo",
+            "zlevel": 13,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 5,
+                "color": "#ffa022",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Dyess Air Force Base->La Guardia Airport",
+                    "coords": [
+                        [
+                            -99.854599,
+                            32.42079926
+                        ],
+                        [
+                            -73.87259674,
+                            40.77719879
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#ffa022"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Chloe",
+            "coordinateSystem": "geo",
+            "zlevel": 14,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4,
+                "color": "#ffa022",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Lipetsk Air Base->Miami International Airport",
+                    "coords": [
+                        [
+                            39.44499969,
+                            52.63499832
+                        ],
+                        [
+                            -80.29060364,
+                            25.79319954
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#ffa022"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Chloe",
+            "coordinateSystem": "geo",
+            "zlevel": 15,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 10,
+                "color": "#ffa022",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Miami International Airport->Lipetsk Air Base",
+                    "coords": [
+                        [
+                            -80.29060364,
+                            25.79319954
+                        ],
+                        [
+                            39.44499969,
+                            52.63499832
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#ffa022"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Colton",
+            "coordinateSystem": "geo",
+            "zlevel": 16,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 10,
+                "color": "#ffa022",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Phoenix Sky Harbor International Airport->General Edward Lawrence Logan International Airport",
+                    "coords": [
+                        [
+                            -112.012001,
+                            33.43429947
+                        ],
+                        [
+                            -71.00520325,
+                            42.36429977
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#ffa022"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Colton",
+            "coordinateSystem": "geo",
+            "zlevel": 17,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 8,
+                "color": "#46bee9",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "General Edward Lawrence Logan International Airport->Phoenix Sky Harbor International Airport",
+                    "coords": [
+                        [
+                            -71.00520325,
+                            42.36429977
+                        ],
+                        [
+                            -112.012001,
+                            33.43429947
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#46bee9"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Dylan",
+            "coordinateSystem": "geo",
+            "zlevel": 18,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 8,
+                "color": "#ffa022",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Taiwan Taoyuan International Airport->John F Kennedy International Airport",
+                    "coords": [
+                        [
+                            121.233002,
+                            25.0777
+                        ],
+                        [
+                            -73.77890015,
+                            40.63980103
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#ffa022"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Dylan",
+            "coordinateSystem": "geo",
+            "zlevel": 19,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 8,
+                "color": "#46bee9",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "John F Kennedy International Airport->Taiwan Taoyuan International Airport",
+                    "coords": [
+                        [
+                            -73.77890015,
+                            40.63980103
+                        ],
+                        [
+                            121.233002,
+                            25.0777
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#46bee9"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Dylan",
+            "coordinateSystem": "geo",
+            "zlevel": 20,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 10,
+                "color": "#a6c84c",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Taiwan Taoyuan International Airport->Guangzhou Baiyun International Airport",
+                    "coords": [
+                        [
+                            121.233002,
+                            25.0777
+                        ],
+                        [
+                            113.2990036,
+                            23.39240074
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#a6c84c"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Dylan",
+            "coordinateSystem": "geo",
+            "zlevel": 21,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 10,
+                "color": "#ffa022",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Guangzhou Baiyun International Airport->Taiwan Taoyuan International Airport",
+                    "coords": [
+                        [
+                            113.2990036,
+                            23.39240074
+                        ],
+                        [
+                            121.233002,
+                            25.0777
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#ffa022"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Tom",
+            "coordinateSystem": "geo",
+            "zlevel": 22,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 5,
+                "color": "#a6c84c",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Sochi International Airport->Tianjin Binhai International Airport",
+                    "coords": [
+                        [
+                            39.9566,
+                            43.449902
+                        ],
+                        [
+                            117.3460007,
+                            39.12440109
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#a6c84c"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Elise",
+            "coordinateSystem": "geo",
+            "zlevel": 23,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 7,
+                "color": "#ffa022",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Miami International Airport->Columbia Metropolitan Airport",
+                    "coords": [
+                        [
+                            -80.29060364,
+                            25.79319954
+                        ],
+                        [
+                            -81.11949921,
+                            33.93880081
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#ffa022"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Elise",
+            "coordinateSystem": "geo",
+            "zlevel": 24,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 9,
+                "color": "#a6c84c",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Columbia Metropolitan Airport->Miami International Airport",
+                    "coords": [
+                        [
+                            -81.11949921,
+                            33.93880081
+                        ],
+                        [
+                            -80.29060364,
+                            25.79319954
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#a6c84c"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Faith",
+            "coordinateSystem": "geo",
+            "zlevel": 25,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 9,
+                "color": "#46bee9",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Lipetsk Air Base->Dyess Air Force Base",
+                    "coords": [
+                        [
+                            39.44499969,
+                            52.63499832
+                        ],
+                        [
+                            -99.854599,
+                            32.42079926
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#46bee9"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Faith",
+            "coordinateSystem": "geo",
+            "zlevel": 26,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4,
+                "color": "#ffa022",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Dyess Air Force Base->Lipetsk Air Base",
+                    "coords": [
+                        [
+                            -99.854599,
+                            32.42079926
+                        ],
+                        [
+                            39.44499969,
+                            52.63499832
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#ffa022"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Faith",
+            "coordinateSystem": "geo",
+            "zlevel": 27,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 10,
+                "color": "#46bee9",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Guangzhou Baiyun International Airport->Lipetsk Air Base",
+                    "coords": [
+                        [
+                            113.2990036,
+                            23.39240074
+                        ],
+                        [
+                            39.44499969,
+                            52.63499832
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#46bee9"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Faith",
+            "coordinateSystem": "geo",
+            "zlevel": 28,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 10,
+                "color": "#a6c84c",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Lipetsk Air Base->Guangzhou Baiyun International Airport",
+                    "coords": [
+                        [
+                            39.44499969,
+                            52.63499832
+                        ],
+                        [
+                            113.2990036,
+                            23.39240074
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#a6c84c"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Grace",
+            "coordinateSystem": "geo",
+            "zlevel": 29,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 8,
+                "color": "#46bee9",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Lipetsk Air Base->Beijing Capital International Airport",
+                    "coords": [
+                        [
+                            39.44499969,
+                            52.63499832
+                        ],
+                        [
+                            116.5849991,
+                            40.08010101
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#46bee9"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Grace",
+            "coordinateSystem": "geo",
+            "zlevel": 30,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 7,
+                "color": "#46bee9",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Beijing Capital International Airport->Lipetsk Air Base",
+                    "coords": [
+                        [
+                            116.5849991,
+                            40.08010101
+                        ],
+                        [
+                            39.44499969,
+                            52.63499832
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#46bee9"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Garrett",
+            "coordinateSystem": "geo",
+            "zlevel": 31,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4,
+                "color": "#ffa022",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Beijing Capital International Airport->Chicago Midway International Airport",
+                    "coords": [
+                        [
+                            116.5849991,
+                            40.08010101
+                        ],
+                        [
+                            -87.75240326,
+                            41.7859993
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#ffa022"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Garrett",
+            "coordinateSystem": "geo",
+            "zlevel": 32,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 6,
+                "color": "#ffa022",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Chicago Midway International Airport->Beijing Capital International Airport",
+                    "coords": [
+                        [
+                            -87.75240326,
+                            41.7859993
+                        ],
+                        [
+                            116.5849991,
+                            40.08010101
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#ffa022"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Garrett",
+            "coordinateSystem": "geo",
+            "zlevel": 33,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 7,
+                "color": "#a6c84c",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Beijing Capital International Airport->Chicago Midway International Airport",
+                    "coords": [
+                        [
+                            116.5849991,
+                            40.08010101
+                        ],
+                        [
+                            -87.75240326,
+                            41.7859993
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#a6c84c"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Garrett",
+            "coordinateSystem": "geo",
+            "zlevel": 34,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 9,
+                "color": "#ffa022",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Chicago Midway International Airport->Beijing Capital International Airport",
+                    "coords": [
+                        [
+                            -87.75240326,
+                            41.7859993
+                        ],
+                        [
+                            116.5849991,
+                            40.08010101
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#ffa022"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Henry",
+            "coordinateSystem": "geo",
+            "zlevel": 35,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 10,
+                "color": "#ffa022",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Mac Dill Air Force Base->Al Maktoum International Airport",
+                    "coords": [
+                        [
+                            -82.52120209,
+                            27.84930038
+                        ],
+                        [
+                            55.161389,
+                            24.896356
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#ffa022"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Henry",
+            "coordinateSystem": "geo",
+            "zlevel": 36,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 7,
+                "color": "#a6c84c",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Al Maktoum International Airport->Mac Dill Air Force Base",
+                    "coords": [
+                        [
+                            55.161389,
+                            24.896356
+                        ],
+                        [
+                            -82.52120209,
+                            27.84930038
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#a6c84c"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Paul",
+            "coordinateSystem": "geo",
+            "zlevel": 37,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 9,
+                "color": "#a6c84c",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Dubai International Airport->Val de Cans/J\u00falio Cezar Ribeiro International Airport",
+                    "coords": [
+                        [
+                            55.36439896,
+                            25.25279999
+                        ],
+                        [
+                            -48.47629929,
+                            -1.37925005
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#a6c84c"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Paul",
+            "coordinateSystem": "geo",
+            "zlevel": 38,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 5,
+                "color": "#a6c84c",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Val de Cans/J\u00falio Cezar Ribeiro International Airport->Dubai International Airport",
+                    "coords": [
+                        [
+                            -48.47629929,
+                            -1.37925005
+                        ],
+                        [
+                            55.36439896,
+                            25.25279999
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#a6c84c"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Paul",
+            "coordinateSystem": "geo",
+            "zlevel": 39,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 8,
+                "color": "#46bee9",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Dubai International Airport->Beijing Capital International Airport",
+                    "coords": [
+                        [
+                            55.36439896,
+                            25.25279999
+                        ],
+                        [
+                            116.5849991,
+                            40.08010101
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#46bee9"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Paul",
+            "coordinateSystem": "geo",
+            "zlevel": 40,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 9,
+                "color": "#a6c84c",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Beijing Capital International Airport->Dubai International Airport",
+                    "coords": [
+                        [
+                            116.5849991,
+                            40.08010101
+                        ],
+                        [
+                            55.36439896,
+                            25.25279999
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#a6c84c"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Paul",
+            "coordinateSystem": "geo",
+            "zlevel": 41,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 5,
+                "color": "#46bee9",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Dubai International Airport->Koltsovo Airport",
+                    "coords": [
+                        [
+                            55.36439896,
+                            25.25279999
+                        ],
+                        [
+                            60.80270004,
+                            56.74309921
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#46bee9"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Paul",
+            "coordinateSystem": "geo",
+            "zlevel": 42,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 6,
+                "color": "#a6c84c",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Koltsovo Airport->Dubai International Airport",
+                    "coords": [
+                        [
+                            60.80270004,
+                            56.74309921
+                        ],
+                        [
+                            55.36439896,
+                            25.25279999
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#a6c84c"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Paul",
+            "coordinateSystem": "geo",
+            "zlevel": 43,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 8,
+                "color": "#ffa022",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Dubai International Airport->Milano Linate Airport",
+                    "coords": [
+                        [
+                            55.36439896,
+                            25.25279999
+                        ],
+                        [
+                            9.27674,
+                            45.445099
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#ffa022"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Paul",
+            "coordinateSystem": "geo",
+            "zlevel": 44,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 8,
+                "color": "#46bee9",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Milano Linate Airport->Dubai International Airport",
+                    "coords": [
+                        [
+                            9.27674,
+                            45.445099
+                        ],
+                        [
+                            55.36439896,
+                            25.25279999
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#46bee9"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Paul",
+            "coordinateSystem": "geo",
+            "zlevel": 45,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 8,
+                "color": "#ffa022",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Dubai International Airport->Luis Munoz Marin International Airport",
+                    "coords": [
+                        [
+                            55.36439896,
+                            25.25279999
+                        ],
+                        [
+                            -66.00180054,
+                            18.43939972
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#ffa022"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Paul",
+            "coordinateSystem": "geo",
+            "zlevel": 46,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4,
+                "color": "#ffa022",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Luis Munoz Marin International Airport->Dubai International Airport",
+                    "coords": [
+                        [
+                            -66.00180054,
+                            18.43939972
+                        ],
+                        [
+                            55.36439896,
+                            25.25279999
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#ffa022"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Paul",
+            "coordinateSystem": "geo",
+            "zlevel": 47,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 7,
+                "color": "#ffa022",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Dubai International Airport->Shanghai Pudong International Airport",
+                    "coords": [
+                        [
+                            55.36439896,
+                            25.25279999
+                        ],
+                        [
+                            121.8050003,
+                            31.14340019
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#ffa022"
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Paul",
+            "coordinateSystem": "geo",
+            "zlevel": 48,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 5,
+                "color": "#46bee9",
+                "symbol": "path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z",
+                "symbolSize": 22,
+                "trailLength": 0
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Shanghai Pudong International Airport->Dubai International Airport",
+                    "coords": [
+                        [
+                            121.8050003,
+                            31.14340019
+                        ],
+                        [
+                            55.36439896,
+                            25.25279999
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0.2,
+                "type": "solid",
+                "color": "#46bee9"
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                null,
+                "Alexander",
+                "Alexander",
+                "Aubrey",
+                "Amanda",
+                "Amanda",
+                "Ben",
+                "Ben",
+                "Ben",
+                "Ben",
+                "Chloe",
+                "Chloe",
+                "Chloe",
+                "Chloe",
+                "Colton",
+                "Colton",
+                "Dylan",
+                "Dylan",
+                "Dylan",
+                "Dylan",
+                "Tom",
+                "Elise",
+                "Elise",
+                "Faith",
+                "Faith",
+                "Faith",
+                "Faith",
+                "Grace",
+                "Grace",
+                "Garrett",
+                "Garrett",
+                "Garrett",
+                "Garrett",
+                "Henry",
+                "Henry",
+                "Paul",
+                "Paul",
+                "Paul",
+                "Paul",
+                "Paul",
+                "Paul",
+                "Paul",
+                "Paul",
+                "Paul",
+                "Paul",
+                "Paul",
+                "Paul"
+            ],
+            "selected": {
+                "null": true,
+                "Alexander": true,
+                "Aubrey": true,
+                "Amanda": true,
+                "Ben": true,
+                "Chloe": true,
+                "Colton": true,
+                "Dylan": true,
+                "Tom": true,
+                "Elise": true,
+                "Faith": true,
+                "Grace": true,
+                "Garrett": true,
+                "Henry": true,
+                "Paul": true
+            },
+            "type": "scroll",
+            "selectedMode": "single",
+            "show": true,
+            "left": "3%",
+            "top": "100px",
+            "orient": "vertical"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "formatter": function (params) {        return params.name + ' : ' + params.value[2];    },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "Airline Map"
+        }
+    ],
+    "geo": {
+        "map": "world",
+        "roam": false,
+        "itemStyle": {
+            "color": "#323c48",
+            "borderColor": "#404a59"
+        },
+        "emphasis": {}
+    }
+};
+        chart_airline.setOption(option_airline);
+        
+    </script>
+
+    <script src=" templates\data.js"></script>
+
+    <script>
+        chart_airline.on('legendselectchanged', function (param) {
+            var selectedName = param.name;
+            if (selectedName == document.getElementById("name").innerHTML.split(";")[4] && document.getElementById("card").style.display == "block")
+                document.getElementById("card").style.display = "none"
+            else
+                for (i = 0; i < data.length; i++)
+                    if (selectedName == data[i].name) {
+                        document.getElementById("card").style.display = "block"
+                        document.getElementById("picture").setAttribute("src", "templates/image/" + data[i].name + ".png");
+                        document.getElementById("name").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;" + data[i].name;
+                        document.getElementById("nation").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;" + data[i].nation;
+                        document.getElementById("sex").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;" + data[i].sex;
+                        document.getElementById("birth").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;" + data[i].birth;
+                        document.getElementById("company").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;" + data[i].company;
+                        document.getElementById("address").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;" + data[i].address;
+                    }
+
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,2338 @@
+{
+    "London Heathrow Airport": [
+        -0.461941,
+        51.4706
+    ],
+    "Los Angeles International Airport": [
+        -118.4079971,
+        33.94250107
+    ],
+    "Chicago O'Hare International Airport": [
+        -87.90480042,
+        41.97859955
+    ],
+    "John F Kennedy International Airport": [
+        -73.77890015,
+        40.63980103
+    ],
+    "Hartsfield Jackson Atlanta International Airport": [
+        -84.42810059,
+        33.63669968
+    ],
+    "Amsterdam Airport Schiphol": [
+        4.76389,
+        52.308601
+    ],
+    "Charles de Gaulle International Airport": [
+        2.549999952,
+        49.01279831
+    ],
+    "San Francisco International Airport": [
+        -122.375,
+        37.61899948
+    ],
+    "Frankfurt am Main Airport": [
+        8.570556,
+        50.033333
+    ],
+    "Newark Liberty International Airport": [
+        -74.16870117,
+        40.69250107
+    ],
+    "Dallas Fort Worth International Airport": [
+        -97.03800201,
+        32.89680099
+    ],
+    "McCarran International Airport": [
+        -115.1520004,
+        36.08010101
+    ],
+    "Orlando International Airport": [
+        -81.30899811,
+        28.42939949
+    ],
+    "Denver International Airport": [
+        -104.6729965,
+        39.86169815
+    ],
+    "Miami International Airport": [
+        -80.29060364,
+        25.79319954
+    ],
+    "La Guardia Airport": [
+        -73.87259674,
+        40.77719879
+    ],
+    "Washington Dulles International Airport": [
+        -77.45580292,
+        38.94449997
+    ],
+    "Seattle Tacoma International Airport": [
+        -122.3089981,
+        47.44900131
+    ],
+    "London Gatwick Airport": [
+        -0.190277994,
+        51.14810181
+    ],
+    "Phoenix Sky Harbor International Airport": [
+        -112.012001,
+        33.43429947
+    ],
+    "General Edward Lawrence Logan International Airport": [
+        -71.00520325,
+        42.36429977
+    ],
+    "Philadelphia International Airport": [
+        -75.2410965,
+        39.87189865
+    ],
+    "George Bush Intercontinental Houston Airport": [
+        -95.34140015,
+        29.9843998
+    ],
+    "Charlotte Douglas International Airport": [
+        -80.94309998,
+        35.2140007
+    ],
+    "Lester B. Pearson International Airport": [
+        -79.63059998,
+        43.67720032
+    ],
+    "Detroit Metropolitan Wayne County Airport": [
+        -83.35340118,
+        42.21239853
+    ],
+    "Ronald Reagan Washington National Airport": [
+        -77.037697,
+        38.8521
+    ],
+    "Munich Airport": [
+        11.7861,
+        48.353802
+    ],
+    "Minneapolis-St Paul International/Wold-Chamberlain Airport": [
+        -93.22180176,
+        44.88199997
+    ],
+    "Barcelona International Airport": [
+        2.078459978,
+        41.29710007
+    ],
+    "Leonardo da Vinci–Fiumicino Airport": [
+        12.2388889,
+        41.8002778
+    ],
+    "Adolfo Suárez Madrid–Barajas Airport": [
+        -3.56264,
+        40.471926
+    ],
+    "Brussels Airport": [
+        4.48443985,
+        50.90140152
+    ],
+    "Copenhagen Kastrup Airport": [
+        12.65600014,
+        55.61790085
+    ],
+    "Zürich Airport": [
+        8.54917,
+        47.464699
+    ],
+    "Salt Lake City International Airport": [
+        -111.9779968,
+        40.78839874
+    ],
+    "San Diego International Airport": [
+        -117.1900024,
+        32.73360062
+    ],
+    "Fort Lauderdale Hollywood International Airport": [
+        -80.15270233,
+        26.07259941
+    ],
+    "Chicago Midway International Airport": [
+        -87.75240326,
+        41.7859993
+    ],
+    "Baltimore/Washington International Thurgood Marshall Airport": [
+        -76.66829681,
+        39.17539978
+    ],
+    "Singapore Changi Airport": [
+        103.994003,
+        1.35019
+    ],
+    "Dublin Airport": [
+        -6.27007,
+        53.421299
+    ],
+    "St Louis Lambert International Airport": [
+        -90.370003,
+        38.748697
+    ],
+    "Vancouver International Airport": [
+        -123.1839981,
+        49.19390106
+    ],
+    "Daniel K Inouye International Airport": [
+        -157.924228,
+        21.32062
+    ],
+    "Vienna International Airport": [
+        16.56970024,
+        48.11029816
+    ],
+    "Narita International Airport": [
+        140.3860016,
+        35.76470184
+    ],
+    "Montreal / Pierre Elliott Trudeau International Airport": [
+        -73.74079895,
+        45.47060013
+    ],
+    "London Stansted Airport": [
+        0.234999999,
+        51.88499832
+    ],
+    "Dubai International Airport": [
+        55.36439896,
+        25.25279999
+    ],
+    "Stockholm-Arlanda Airport": [
+        17.91860008,
+        59.65190125
+    ],
+    "Václav Havel Airport Prague": [
+        14.26,
+        50.1008
+    ],
+    "Portland International Airport": [
+        -122.5979996,
+        45.58869934
+    ],
+    "Chek Lap Kok International Airport": [
+        113.9150009,
+        22.30890083
+    ],
+    "Tampa International Airport": [
+        -82.53320313,
+        27.97550011
+    ],
+    "Atatürk International Airport": [
+        28.8146,
+        40.976898
+    ],
+    "Sydney Kingsford Smith International Airport": [
+        151.177002,
+        -33.94609833
+    ],
+    "Louis Armstrong New Orleans International Airport": [
+        -90.25800323,
+        29.99340057
+    ],
+    "Humberto Delgado Airport (Lisbon Portela Airport)": [
+        -9.13592,
+        38.7813
+    ],
+    "Cincinnati Northern Kentucky International Airport": [
+        -84.6678009,
+        39.04880142
+    ],
+    "Suvarnabhumi Airport": [
+        100.7470016,
+        13.68109989
+    ],
+    "Berlin-Tegel Airport": [
+        13.2877,
+        52.5597
+    ],
+    "Nashville International Airport": [
+        -86.67819977,
+        36.12450027
+    ],
+    "Pittsburgh International Airport": [
+        -80.23290253,
+        40.49150085
+    ],
+    "Metropolitan Oakland International Airport": [
+        -122.221001,
+        37.721298
+    ],
+    "Malpensa International Airport": [
+        8.72811,
+        45.6306
+    ],
+    "Norman Y. Mineta San Jose International Airport": [
+        -121.929001,
+        37.362598
+    ],
+    "Oslo Gardermoen Airport": [
+        11.10039997,
+        60.19390106
+    ],
+    "Raleigh Durham International Airport": [
+        -78.78749847,
+        35.87760162
+    ],
+    "Cancún International Airport": [
+        -86.87709808,
+        21.03650093
+    ],
+    "Austin Bergstrom International Airport": [
+        -97.66989899,
+        30.19449997
+    ],
+    "Memphis International Airport": [
+        -89.97669983,
+        35.04240036
+    ],
+    "Budapest Ferenc Liszt International Airport": [
+        19.25559998,
+        47.43690109
+    ],
+    "Kansas City International Airport": [
+        -94.713898,
+        39.2976
+    ],
+    "Eleftherios Venizelos International Airport": [
+        23.94449997,
+        37.93640137
+    ],
+    "Paris-Orly Airport": [
+        2.3794444,
+        48.7233333
+    ],
+    "John Wayne Airport-Orange County Airport": [
+        -117.8679962,
+        33.67570114
+    ],
+    "San Antonio International Airport": [
+        -98.46980286,
+        29.53370094
+    ],
+    "Helsinki Vantaa Airport": [
+        24.9633007,
+        60.31719971
+    ],
+    "Beijing Capital International Airport": [
+        116.5849991,
+        40.08010101
+    ],
+    "Calgary International Airport": [
+        -114.0199966,
+        51.11389923
+    ],
+    "William P Hobby Airport": [
+        -95.27890015,
+        29.64539909
+    ],
+    "Geneva Cointrin International Airport": [
+        6.108950138,
+        46.23809814
+    ],
+    "Düsseldorf Airport": [
+        6.76678,
+        51.289501
+    ],
+    "Cleveland Hopkins International Airport": [
+        -81.84980011,
+        41.4117012
+    ],
+    "Kuala Lumpur International Airport": [
+        101.7099991,
+        2.745579958
+    ],
+    "Licenciado Benito Juarez International Airport": [
+        -99.072098,
+        19.4363
+    ],
+    "Indianapolis International Airport": [
+        -86.294403,
+        39.7173
+    ],
+    "Albuquerque International Sunport Airport": [
+        -106.609001,
+        35.040199
+    ],
+    "Dallas Love Field": [
+        -96.851799,
+        32.847099
+    ],
+    "Keflavik International Airport": [
+        -22.60560036,
+        63.98500061
+    ],
+    "Melbourne International Airport": [
+        144.843002,
+        -37.673302
+    ],
+    "Palma De Mallorca Airport": [
+        2.738810062,
+        39.55170059
+    ],
+    "General Mitchell International Airport": [
+        -87.89659882,
+        42.94720078
+    ],
+    "Venice Marco Polo Airport": [
+        12.3519,
+        45.505299
+    ],
+    "OR Tambo International Airport": [
+        28.246,
+        -26.1392
+    ],
+    "Edinburgh Airport": [
+        -3.372499943,
+        55.95000076
+    ],
+    "Shanghai Pudong International Airport": [
+        121.8050003,
+        31.14340019
+    ],
+    "Ottawa Macdonald-Cartier International Airport": [
+        -75.66919708,
+        45.32249832
+    ],
+    "Nice-Côte d'Azur Airport": [
+        7.215869904,
+        43.65840149
+    ],
+    "London Luton Airport": [
+        -0.368333012,
+        51.87469864
+    ],
+    "Warsaw Chopin Airport": [
+        20.96710014,
+        52.16569901
+    ],
+    "Indira Gandhi International Airport": [
+        77.103104,
+        28.5665
+    ],
+    "John Glenn Columbus International Airport": [
+        -82.891899,
+        39.998001
+    ],
+    "Málaga Airport": [
+        -4.499110222,
+        36.67490005
+    ],
+    "Incheon International Airport": [
+        126.4509964,
+        37.46910095
+    ],
+    "Luis Munoz Marin International Airport": [
+        -66.00180054,
+        18.43939972
+    ],
+    "Berlin-Schönefeld Airport": [
+        13.5225,
+        52.380001
+    ],
+    "Tucson International Airport": [
+        -110.9410019,
+        32.11610031
+    ],
+    "Buffalo Niagara International Airport": [
+        -78.73220062,
+        42.94049835
+    ],
+    "Sheremetyevo International Airport": [
+        37.4146,
+        55.972599
+    ],
+    "Auckland International Airport": [
+        174.7920074,
+        -37.0080986
+    ],
+    "Cologne Bonn Airport": [
+        7.142739773,
+        50.86589813
+    ],
+    "Milano Linate Airport": [
+        9.27674,
+        45.445099
+    ],
+    "Bradley International Airport": [
+        -72.68319702,
+        41.93889999
+    ],
+    "Guarulhos - Governador André Franco Montoro International Airport": [
+        -46.47305679,
+        -23.43555641
+    ],
+    "Ninoy Aquino International Airport": [
+        121.019997,
+        14.5086
+    ],
+    "Cairo International Airport": [
+        31.40559959,
+        30.12190056
+    ],
+    "Ted Stevens Anchorage International Airport": [
+        -149.9960022,
+        61.17440033
+    ],
+    "Hamburg Airport": [
+        9.988229752,
+        53.63040161
+    ],
+    "Jacksonville International Airport": [
+        -81.68789673,
+        30.49410057
+    ],
+    "Ministro Pistarini International Airport": [
+        -58.5358,
+        -34.8222
+    ],
+    "Chhatrapati Shivaji International Airport": [
+        72.86789703,
+        19.08869934
+    ],
+    "Don Mueang International Airport": [
+        100.6070023,
+        13.91259956
+    ],
+    "Ben Gurion International Airport": [
+        34.88669968,
+        32.01139832
+    ],
+    "Glasgow International Airport": [
+        -4.433060169,
+        55.87189865
+    ],
+    "Taiwan Taoyuan International Airport": [
+        121.233002,
+        25.0777
+    ],
+    "Will Rogers World Airport": [
+        -97.60070038,
+        35.39310074
+    ],
+    "Winnipeg / James Armstrong Richardson International Airport": [
+        -97.23989868,
+        49.90999985
+    ],
+    "Ciampino–G. B. Pastine International Airport": [
+        12.5949,
+        41.7994
+    ],
+    "Brisbane International Airport": [
+        153.1170044,
+        -27.38419914
+    ],
+    "Gran Canaria Airport": [
+        -15.38659954,
+        27.93190002
+    ],
+    "Ngurah Rai (Bali) International Airport": [
+        115.1669998,
+        -8.748169899
+    ],
+    "Reno Tahoe International Airport": [
+        -119.7679977,
+        39.49909973
+    ],
+    "Sacramento International Airport": [
+        -121.5910034,
+        38.69540024
+    ],
+    "Cape Town International Airport": [
+        18.60169983,
+        -33.96480179
+    ],
+    "Edmonton International Airport": [
+        -113.5800018,
+        53.30970001
+    ],
+    "Palm Beach International Airport": [
+        -80.09559631,
+        26.68320084
+    ],
+    "Norfolk International Airport": [
+        -76.20120239,
+        36.89459991
+    ],
+    "Abu Dhabi International Airport": [
+        54.65110016,
+        24.43300056
+    ],
+    "Malta International Airport": [
+        14.4775,
+        35.857498
+    ],
+    "Stuttgart Airport": [
+        9.221960068,
+        48.68989944
+    ],
+    "Birmingham International Airport": [
+        -1.748029947,
+        52.45389938
+    ],
+    "Rio Galeão – Tom Jobim International Airport": [
+        -43.25055695,
+        -22.80999947
+    ],
+    "Antalya International Airport": [
+        30.800501,
+        36.898701
+    ],
+    "Louisville International Standiford Field": [
+        -85.736,
+        38.1744
+    ],
+    "Halifax / Stanfield International Airport": [
+        -63.50859833,
+        44.88079834
+    ],
+    "Bergen Airport Flesland": [
+        5.218140125,
+        60.29339981
+    ],
+    "Charleston Air Force Base-International Airport": [
+        -80.04049683,
+        32.89860153
+    ],
+    "Jorge Chávez International Airport": [
+        -77.114305,
+        -12.0219
+    ],
+    "Comodoro Arturo Merino Benítez International Airport": [
+        -70.78579712,
+        -33.39300156
+    ],
+    "Tokyo Haneda International Airport": [
+        139.779999,
+        35.552299
+    ],
+    "Ontario International Airport": [
+        -117.6009979,
+        34.05599976
+    ],
+    "Richmond International Airport": [
+        -77.31970215,
+        37.50519943
+    ],
+    "Savannah Hilton Head International Airport": [
+        -81.20210266,
+        32.12760162
+    ],
+    "Riga International Airport": [
+        23.97109985,
+        56.92359924
+    ],
+    "Syracuse Hancock International Airport": [
+        -76.10630035,
+        43.11119843
+    ],
+    "Il Caravaggio International Airport": [
+        9.70417,
+        45.673901
+    ],
+    "Boise Air Terminal/Gowen field": [
+        -116.2229996,
+        43.56439972
+    ],
+    "Birmingham-Shuttlesworth International Airport": [
+        -86.75350189,
+        33.56290054
+    ],
+    "Heraklion International Nikos Kazantzakis Airport": [
+        25.18029976,
+        35.33969879
+    ],
+    "Jomo Kenyatta International Airport": [
+        36.92779922,
+        -1.319239974
+    ],
+    "Phuket International Airport": [
+        98.316902,
+        8.1132
+    ],
+    "Manchester Airport": [
+        -71.43569946,
+        42.93259811
+    ],
+    "Spokane International Airport": [
+        -117.5339966,
+        47.61989975
+    ],
+    "Tocumen International Airport": [
+        -79.38349915,
+        9.071359634
+    ],
+    "Wichita Mid Continent Airport": [
+        -97.43309784,
+        37.64989853
+    ],
+    "Portland International Jetport Airport": [
+        -70.30930328,
+        43.64619827
+    ],
+    "Tenerife South Airport": [
+        -16.57250023,
+        28.04450035
+    ],
+    "Southwest Florida International Airport": [
+        -81.75520325,
+        26.53619957
+    ],
+    "James M Cox Dayton International Airport": [
+        -84.2193985,
+        39.90240097
+    ],
+    "Greater Rochester International Airport": [
+        -77.67240143,
+        43.1189003
+    ],
+    "Soekarno-Hatta International Airport": [
+        106.6559982,
+        -6.12556982
+    ],
+    "Tan Son Nhat International Airport": [
+        106.6520004,
+        10.81879997
+    ],
+    "Dane County Regional Truax Field": [
+        -89.33750153,
+        43.13990021
+    ],
+    "Brussels South Charleroi Airport": [
+        4.45382,
+        50.459202
+    ],
+    "Zagreb Airport": [
+        16.06879997,
+        45.74290085
+    ],
+    "Larnaca International Airport": [
+        33.62490082,
+        34.87509918
+    ],
+    "Domodedovo International Airport": [
+        37.90629959,
+        55.40879822
+    ],
+    "City of Colorado Springs Municipal Airport": [
+        -104.7009964,
+        38.80580139
+    ],
+    "Gothenburg-Landvetter Airport": [
+        12.27980042,
+        57.66279984
+    ],
+    "Tulsa International Airport": [
+        -95.88809967,
+        36.19839859
+    ],
+    "Belgrade Nikola Tesla Airport": [
+        20.3090992,
+        44.81840134
+    ],
+    "Christchurch International Airport": [
+        172.5319977,
+        -43.48939896
+    ],
+    "Kansai International Airport": [
+        135.2440033,
+        34.4272995
+    ],
+    "Des Moines International Airport": [
+        -93.6631012,
+        41.5340004
+    ],
+    "Bologna Guglielmo Marconi Airport": [
+        11.2887,
+        44.5354
+    ],
+    "Faro Airport": [
+        -7.965909958,
+        37.01440048
+    ],
+    "Henri Coandă International Airport": [
+        26.085,
+        44.5711111
+    ],
+    "Bill & Hillary Clinton National Airport/Adams Field": [
+        -92.22429657,
+        34.72940063
+    ],
+    "Victoria International Airport": [
+        -123.4260025,
+        48.64690018
+    ],
+    "Perth International Airport": [
+        115.9670029,
+        -31.94029999
+    ],
+    "Alicante International Airport": [
+        -0.558156013,
+        38.28219986
+    ],
+    "Boeing Field King County International Airport": [
+        -122.302002,
+        47.52999878
+    ],
+    "Shannon Airport": [
+        -8.924819946,
+        52.70199966
+    ],
+    "John Paul II International Airport Kraków-Balice Airport": [
+        19.78479958,
+        50.07770157
+    ],
+    "Lynden Pindling International Airport": [
+        -77.46620178,
+        25.03899956
+    ],
+    "Piedmont Triad International Airport": [
+        -79.93730164,
+        36.09780121
+    ],
+    "Marseille Provence Airport": [
+        5.221424103,
+        43.43927192
+    ],
+    "Pulkovo Airport": [
+        30.26250076,
+        59.8003006
+    ],
+    "Licenciado Gustavo Díaz Ordaz International Airport": [
+        -105.2539978,
+        20.68009949
+    ],
+    "Punta Cana International Airport": [
+        -68.36340332,
+        18.56739998
+    ],
+    "Toulouse-Blagnac Airport": [
+        1.36382,
+        43.629101
+    ],
+    "El Dorado International Airport": [
+        -74.1469,
+        4.70159
+    ],
+    "Francisco de Sá Carneiro Airport": [
+        -8.681389809,
+        41.24810028
+    ],
+    "Lennart Meri Tallinn Airport": [
+        24.83279991,
+        59.41329956
+    ],
+    "Naples International Airport": [
+        14.2908,
+        40.886002
+    ],
+    "Hamad International Airport": [
+        51.608056,
+        25.273056
+    ],
+    "McGhee Tyson Airport": [
+        -83.9940033,
+        35.81100082
+    ],
+    "Lyon Saint-Exupéry Airport": [
+        5.081111,
+        45.725556
+    ],
+    "Tallahassee Regional Airport": [
+        -84.35030365,
+        30.39649963
+    ],
+    "EuroAirport Basel-Mulhouse-Freiburg Airport": [
+        7.5291667,
+        47.59
+    ],
+    "Ljubljana Jože Pučnik Airport": [
+        14.4576,
+        46.223701
+    ],
+    "Greenville Spartanburg International Airport": [
+        -82.21890259,
+        34.89569855
+    ],
+    "Stavanger Airport Sola": [
+        5.63778019,
+        58.87670135
+    ],
+    "Blue Grass Airport": [
+        -84.60590363,
+        38.03649902
+    ],
+    "Sarasota Bradenton International Airport": [
+        -82.55439758,
+        27.39539909
+    ],
+    "Shanghai Hongqiao International Airport": [
+        121.3359985,
+        31.19790077
+    ],
+    "Eindhoven Airport": [
+        5.374529839,
+        51.45009995
+    ],
+    "Noi Bai International Airport": [
+        105.8069992,
+        21.22120094
+    ],
+    "Daytona Beach International Airport": [
+        -81.058098,
+        29.179899
+    ],
+    "Bangor International Airport": [
+        -68.82810211,
+        44.80739975
+    ],
+    "Liverpool John Lennon Airport": [
+        -2.849720001,
+        53.33359909
+    ],
+    "José Martí International Airport": [
+        -82.40910339,
+        22.98920059
+    ],
+    "Pisa International Airport": [
+        10.3927,
+        43.683899
+    ],
+    "Trondheim Airport Værnes": [
+        10.9239998,
+        63.4578018
+    ],
+    "Nuremberg Airport": [
+        11.078056,
+        49.498699
+    ],
+    "Catania-Fontanarossa Airport": [
+        15.0664,
+        37.466801
+    ],
+    "Bristol Airport": [
+        -2.71909,
+        51.382702
+    ],
+    "Bandaranaike International Colombo Airport": [
+        79.88410187,
+        7.180759907
+    ],
+    "Sabiha Gökçen International Airport": [
+        29.30920029,
+        40.89860153
+    ],
+    "Lubbock Preston Smith International Airport": [
+        -101.822998,
+        33.663601
+    ],
+    "Muscat International Airport": [
+        58.28440094,
+        23.59329987
+    ],
+    "Mohammed V International Airport": [
+        -7.589970112,
+        33.36750031
+    ],
+    "Columbia Metropolitan Airport": [
+        -81.11949921,
+        33.93880081
+    ],
+    "Rick Husband Amarillo International Airport": [
+        -101.706001,
+        35.219398
+    ],
+    "Newcastle Airport": [
+        -1.691669941,
+        55.03749847
+    ],
+    "Thessaloniki Macedonia International Airport": [
+        22.97089958,
+        40.5196991
+    ],
+    "Lovell Field": [
+        -85.20379639,
+        35.03530121
+    ],
+    "Tunis Carthage International Airport": [
+        10.22719955,
+        36.85100174
+    ],
+    "Hannover Airport": [
+        9.685079575,
+        52.46110153
+    ],
+    "Luxembourg-Findel International Airport": [
+        6.2044444,
+        49.6233333
+    ],
+    "Vilnius International Airport": [
+        25.285801,
+        54.634102
+    ],
+    "Boryspil International Airport": [
+        30.8946991,
+        50.34500122
+    ],
+    "Congonhas Airport": [
+        -46.65638733,
+        -23.62611008
+    ],
+    "Billings Logan International Airport": [
+        -108.5429993,
+        45.80770111
+    ],
+    "Bahrain International Airport": [
+        50.63359833,
+        26.27079964
+    ],
+    "Chiang Mai International Airport": [
+        98.96260071,
+        18.76679993
+    ],
+    "Gimpo International Airport": [
+        126.791,
+        37.5583
+    ],
+    "Kempegowda International Airport": [
+        77.706299,
+        13.1979
+    ],
+    "Chennai International Airport": [
+        80.16929626,
+        12.99000549
+    ],
+    "Austin Straubel International Airport": [
+        -88.12960052,
+        44.48509979
+    ],
+    "East Midlands Airport": [
+        -1.328060031,
+        52.83110046
+    ],
+    "Hurghada International Airport": [
+        33.79940033,
+        27.17830086
+    ],
+    "Treviso-Sant'Angelo Airport": [
+        12.1944,
+        45.648399
+    ],
+    "Alejandro Velasco Astete International Airport": [
+        -71.938797,
+        -13.53569984
+    ],
+    "Guangzhou Baiyun International Airport": [
+        113.2990036,
+        23.39240074
+    ],
+    "Huntsville International Carl T Jones Field": [
+        -86.77510071,
+        34.6371994
+    ],
+    "Asheville Regional Airport": [
+        -82.54180145,
+        35.43619919
+    ],
+    "M. R. Štefánik Airport": [
+        17.21269989,
+        48.17020035
+    ],
+    "Springfield Branson National Airport": [
+        -93.38860321,
+        37.24570084
+    ],
+    "Sofia Airport": [
+        23.41143608,
+        42.69669342
+    ],
+    "Adelaide International Airport": [
+        138.531006,
+        -34.945
+    ],
+    "Belfast International Airport": [
+        -6.215829849,
+        54.65750122
+    ],
+    "The Eastern Iowa Airport": [
+        -91.71080017,
+        41.88470078
+    ],
+    "Turin Airport": [
+        7.64963,
+        45.200802
+    ],
+    "Los Cabos International Airport": [
+        -109.7210007,
+        23.15180016
+    ],
+    "Princess Juliana International Airport": [
+        -63.10889816,
+        18.04100037
+    ],
+    "Billund Airport": [
+        9.151780128,
+        55.74029922
+    ],
+    "Leeds Bradford Airport": [
+        -1.660570025,
+        53.86589813
+    ],
+    "Malmö Sturup Airport": [
+        13.37619781,
+        55.53630536
+    ],
+    "Orlando Sanford International Airport": [
+        -81.23750305,
+        28.77759933
+    ],
+    "King Abdulaziz International Airport": [
+        39.156502,
+        21.6796
+    ],
+    "Aberdeen Dyce Airport": [
+        -2.197779894,
+        57.20190048
+    ],
+    "Adnan Menderes International Airport": [
+        27.15699959,
+        38.29240036
+    ],
+    "Falcone–Borsellino Airport": [
+        13.091,
+        38.175999
+    ],
+    "St. John's International Airport": [
+        -52.75189972,
+        47.61859894
+    ],
+    "Bordeaux-Mérignac Airport": [
+        -0.715556026,
+        44.82830048
+    ],
+    "Bremen Airport": [
+        8.786669731,
+        53.04750061
+    ],
+    "Don Miguel Hidalgo Y Costilla International Airport": [
+        -103.310997,
+        20.52179909
+    ],
+    "Mobile Regional Airport": [
+        -88.24279785,
+        30.69120026
+    ],
+    "South Bend Regional Airport": [
+        -86.31729889,
+        41.70869827
+    ],
+    "Fairbanks International Airport": [
+        -147.8560028,
+        64.81510162
+    ],
+    "Kuwait International Airport": [
+        47.96889877,
+        29.22660065
+    ],
+    "Siem Reap International Airport": [
+        103.8130035,
+        13.41069984
+    ],
+    "Léopold Sédar Senghor International Airport": [
+        -17.49020004,
+        14.73970032
+    ],
+    "Las Américas International Airport": [
+        -69.66889954,
+        18.42970085
+    ],
+    "Southampton Airport": [
+        -1.35679996,
+        50.95029831
+    ],
+    "Verona Villafranca Airport": [
+        10.8885,
+        45.395699
+    ],
+    "Queen Alia International Airport": [
+        35.99319839,
+        31.72260094
+    ],
+    "Fort Wayne International Airport": [
+        -85.19509888,
+        40.97850037
+    ],
+    "Addis Ababa Bole International Airport": [
+        38.79930115,
+        8.977890015
+    ],
+    "Mactan Cebu International Airport": [
+        123.9789963,
+        10.30749989
+    ],
+    "Wellington International Airport": [
+        174.8049927,
+        -41.32720184
+    ],
+    "Xi'an Xianyang International Airport": [
+        108.751999,
+        34.447102
+    ],
+    "Malé International Airport": [
+        73.52909851,
+        4.191830158
+    ],
+    "Rochester International Airport": [
+        -92.5,
+        43.90829849
+    ],
+    "Tromsø Airport": [
+        18.91889954,
+        69.6832962
+    ],
+    "Beirut Rafic Hariri International Airport": [
+        35.48839951,
+        33.82089996
+    ],
+    "Duluth International Airport": [
+        -92.19360352,
+        46.84209824
+    ],
+    "Roanoke–Blacksburg Regional Airport": [
+        -79.975403,
+        37.3255
+    ],
+    "Simón Bolívar International Airport": [
+        -66.991222,
+        10.601194
+    ],
+    "Baton Rouge Metropolitan, Ryan Field": [
+        -91.14959717,
+        30.53319931
+    ],
+    "Yeager Airport": [
+        -81.59320068,
+        38.37310028
+    ],
+    "Canberra International Airport": [
+        149.1950073,
+        -35.30690002
+    ],
+    "Gdańsk Lech Wałęsa Airport": [
+        18.46619987,
+        54.37760162
+    ],
+    "Fort Worth Meacham International Airport": [
+        -97.362396,
+        32.819801
+    ],
+    "Esenboğa International Airport": [
+        32.99509811,
+        40.12810135
+    ],
+    "Bodø Airport": [
+        14.36530018,
+        67.26920319
+    ],
+    "General Mariano Escobedo International Airport": [
+        -100.1070023,
+        25.7784996
+    ],
+    "Osaka International Airport": [
+        135.4380035,
+        34.78549957
+    ],
+    "Gulfport Biloxi International Airport": [
+        -89.07009888,
+        30.40730095
+    ],
+    "Jackson-Medgar Wiley Evers International Airport": [
+        -90.07589722,
+        32.31119919
+    ],
+    "Phnom Penh International Airport": [
+        104.8440018,
+        11.54660034
+    ],
+    "Presidente Juscelino Kubistschek International Airport": [
+        -47.92083359,
+        -15.86916733
+    ],
+    "Toledo Express Airport": [
+        -83.80780029,
+        41.58679962
+    ],
+    "George Best Belfast City Airport": [
+        -5.872499943,
+        54.61809921
+    ],
+    "Cork Airport": [
+        -8.491109848,
+        51.84130096
+    ],
+    "Dabolim Airport": [
+        73.83139801,
+        15.38080025
+    ],
+    "Tenerife Norte Airport": [
+        -16.34149933,
+        28.48270035
+    ],
+    "Quad City International Airport": [
+        -90.50749969,
+        41.44850159
+    ],
+    "Newport News Williamsburg International Airport": [
+        -76.49299622,
+        37.13190079
+    ],
+    "Corpus Christi International Airport": [
+        -97.50119781,
+        27.77039909
+    ],
+    "Shreveport Regional Airport": [
+        -93.82559967,
+        32.44660187
+    ],
+    "Murtala Muhammed International Airport": [
+        3.321160078,
+        6.577370167
+    ],
+    "Sarajevo International Airport": [
+        18.3314991,
+        43.82460022
+    ],
+    "Juan Gualberto Gomez International Airport": [
+        -81.43530273,
+        23.03440094
+    ],
+    "Kotoka International Airport": [
+        -0.166786,
+        5.6051898
+    ],
+    "Cagliari Elmas Airport": [
+        9.05428,
+        39.251499
+    ],
+    "Norman Manley International Airport": [
+        -76.78749847,
+        17.93569946
+    ],
+    "Augusta Regional At Bush Field": [
+        -81.96450043,
+        33.36989975
+    ],
+    "Milas Bodrum International Airport": [
+        27.66430092,
+        37.25059891
+    ],
+    "Tri-Cities Regional TN/VA Airport": [
+        -82.407401,
+        36.475201
+    ],
+    "Montgomery Regional (Dannelly Field) Airport": [
+        -86.39399719,
+        32.30059814
+    ],
+    "Luxor International Airport": [
+        32.7066,
+        25.671
+    ],
+    "Vnukovo International Airport": [
+        37.26150131,
+        55.59149933
+    ],
+    "Kunming Changshui International Airport": [
+        102.9291667,
+        25.1019444
+    ],
+    "General Wayne A. Downing Peoria International Airport": [
+        -89.69329834,
+        40.66419983
+    ],
+    "Central Illinois Regional Airport at Bloomington-Normal": [
+        -88.91590118,
+        40.47710037
+    ],
+    "Cardiff International Airport": [
+        -3.343329906,
+        51.39670181
+    ],
+    "Exeter International Airport": [
+        -3.413889885,
+        50.7344017
+    ],
+    "Genoa Cristoforo Colombo Airport": [
+        8.8375,
+        44.4133
+    ],
+    "Mariscal Sucre International Airport": [
+        -78.3575,
+        -0.129166667
+    ],
+    "Chengdu Shuangliu International Airport": [
+        103.9469986,
+        30.57850075
+    ],
+    "Chicago Rockford International Airport": [
+        -89.09719849,
+        42.19540024
+    ],
+    "Carrasco International /General C L Berisso Airport": [
+        -56.0308,
+        -34.838402
+    ],
+    "Santiago de Compostela Airport": [
+        -8.415140152,
+        42.89630127
+    ],
+    "Owen Roberts International Airport": [
+        -81.35769653,
+        19.2928009
+    ],
+    "Da Nang International Airport": [
+        108.1989975,
+        16.04389954
+    ],
+    "Fukuoka Airport": [
+        130.451004,
+        33.58589935
+    ],
+    "Fort Smith Regional Airport": [
+        -94.36740112,
+        35.33660126
+    ],
+    "Cochin International Airport": [
+        76.401901,
+        10.152
+    ],
+    "King Khaled International Airport": [
+        46.69879913,
+        24.95759964
+    ],
+    "Shenzhen Bao'an International Airport": [
+        113.810997,
+        22.63929939
+    ],
+    "Casper-Natrona County International Airport": [
+        -106.4639969,
+        42.90800095
+    ],
+    "Imam Khomeini International Airport": [
+        51.15219879,
+        35.41609955
+    ],
+    "Bari Karol Wojtyła Airport": [
+        16.760599,
+        41.138901
+    ],
+    "General Juan N Alvarez International Airport": [
+        -99.7539978,
+        16.75709915
+    ],
+    "Macau International Airport": [
+        113.592003,
+        22.149599
+    ],
+    "Julius Nyerere International Airport": [
+        39.202599,
+        -6.87811
+    ],
+    "Mombasa Moi International Airport": [
+        39.59420013,
+        -4.034830093
+    ],
+    "Dalaman International Airport": [
+        28.79249954,
+        36.71310043
+    ],
+    "Khartoum International Airport": [
+        32.55319977,
+        15.58950043
+    ],
+    "Daniel Oduber Quiros International Airport": [
+        -85.544403,
+        10.5933
+    ],
+    "Tbilisi International Airport": [
+        44.95470047,
+        41.6692009
+    ],
+    "Netaji Subhash Chandra Bose International Airport": [
+        88.44670105,
+        22.65469933
+    ],
+    "Abraham Lincoln Capital Airport": [
+        -89.67790222,
+        39.84410095
+    ],
+    "Diosdado Macapagal International Airport": [
+        120.559998,
+        15.186
+    ],
+    "Dresden Airport": [
+        13.76720047,
+        51.13280106
+    ],
+    "Leipzig/Halle Airport": [
+        12.236389,
+        51.423889
+    ],
+    "Maastricht Aachen Airport": [
+        5.770140171,
+        50.9117012
+    ],
+    "Dortmund Airport": [
+        7.612239838,
+        51.5182991
+    ],
+    "Antonio B. Won Pat International Airport": [
+        144.7960052,
+        13.48340034
+    ],
+    "Poznań-Ławica Airport": [
+        16.82629967,
+        52.42100143
+    ],
+    "Monseñor Óscar Arnulfo Romero International Airport": [
+        -89.055702,
+        13.4409
+    ],
+    "Heydar Aliyev International Airport": [
+        50.04669952,
+        40.46749878
+    ],
+    "Sheppard Air Force Base-Wichita Falls Municipal Airport": [
+        -98.491898,
+        33.9888
+    ],
+    "Houari Boumediene Airport": [
+        3.215409994,
+        36.69100189
+    ],
+    "Burgas Airport": [
+        27.51519966,
+        42.56959915
+    ],
+    "Paphos International Airport": [
+        32.4856987,
+        34.7179985
+    ],
+    "Deputado Luiz Eduardo Magalhães International Airport": [
+        -38.32249832,
+        -12.9086113
+    ],
+    "Yangon International Airport": [
+        96.1332016,
+        16.90730095
+    ],
+    "Erie International Tom Ridge Field": [
+        -80.17386675,
+        42.08312701
+    ],
+    "MBS International Airport": [
+        -84.07959747,
+        43.53290176
+    ],
+    "Sioux Gateway Col. Bud Day Field": [
+        -96.38439941,
+        42.40259933
+    ],
+    "Destin-Ft Walton Beach Airport": [
+        -86.525398,
+        30.4832
+    ],
+    "Rajiv Gandhi International Airport": [
+        78.42985535,
+        17.23131752
+    ],
+    "Spirit of St Louis Airport": [
+        -90.65200043,
+        38.66210175
+    ],
+    "Naha Airport": [
+        127.6460037,
+        26.19580078
+    ],
+    "Juanda International Airport": [
+        112.7870026,
+        -7.379829884
+    ],
+    "Aalborg Airport": [
+        9.849243164,
+        57.09275891
+    ],
+    "Gimhae International Airport": [
+        128.9380035,
+        35.17950058
+    ],
+    "Lafayette Regional Airport": [
+        -91.98760223,
+        30.20529938
+    ],
+    "Monroe Regional Airport": [
+        -92.03769684,
+        32.51089859
+    ],
+    "General Abelardo L. Rodríguez International Airport": [
+        -116.9700012,
+        32.54109955
+    ],
+    "Sharjah International Airport": [
+        55.51720047,
+        25.32859993
+    ],
+    "Trivandrum International Airport": [
+        76.92009735,
+        8.48211956
+    ],
+    "Bournemouth Airport": [
+        -1.842499971,
+        50.77999878
+    ],
+    "Philip S. W. Goldson International Airport": [
+        -88.30819702,
+        17.53910065
+    ],
+    "New Chitose Airport": [
+        141.6920013,
+        42.77519989
+    ],
+    "Almaty Airport": [
+        77.04049683,
+        43.35210037
+    ],
+    "Varna Airport": [
+        27.8251,
+        43.232101
+    ],
+    "Afonso Pena Airport": [
+        -49.17580032,
+        -25.5284996
+    ],
+    "Tripoli International Airport": [
+        13.1590004,
+        32.66350174
+    ],
+    "Katowice International Airport": [
+        19.08,
+        50.4743
+    ],
+    "Rickenbacker International Airport": [
+        -82.927803,
+        39.813801
+    ],
+    "Modlin Airport": [
+        20.65180016,
+        52.4510994
+    ],
+    "Brunei International Airport": [
+        114.9280014,
+        4.944200039
+    ],
+    "Manas International Airport": [
+        74.4776001,
+        43.06129837
+    ],
+    "Dubuque Regional Airport": [
+        -90.70950317,
+        42.40200043
+    ],
+    "Minsk National Airport": [
+        28.03070068,
+        53.88249969
+    ],
+    "Fort Worth Alliance Airport": [
+        -97.31880188,
+        32.98759842
+    ],
+    "Jeju International Airport": [
+        126.4929962,
+        33.51129913
+    ],
+    "Liège Airport": [
+        5.443220139,
+        50.63740158
+    ],
+    "Münster Osnabrück Airport": [
+        7.684830189,
+        52.13460159
+    ],
+    "Tancredo Neves International Airport": [
+        -43.9719429,
+        -19.62444305
+    ],
+    "Lajes Airport": [
+        -27.090799,
+        38.761799
+    ],
+    "Copernicus Wrocław Airport": [
+        16.88579941,
+        51.10269928
+    ],
+    "Wuhan Tianhe International Airport": [
+        114.208,
+        30.7838
+    ],
+    "Norwich International Airport": [
+        1.282780051,
+        52.67580032
+    ],
+    "General Ignacio P. Garcia International Airport": [
+        -111.0479965,
+        29.09589958
+    ],
+    "Mehrabad International Airport": [
+        51.31340027,
+        35.68920135
+    ],
+    "Hercílio Luz International Airport": [
+        -48.55250168,
+        -27.67027855
+    ],
+    "Robin Hood Doncaster Sheffield Airport": [
+        -1.010656357,
+        53.48053781
+    ],
+    "Chubu Centrair International Airport": [
+        136.8049927,
+        34.85839844
+    ],
+    "Xiamen Gaoqi International Airport": [
+        118.1279984,
+        24.54400063
+    ],
+    "Podgorica Airport": [
+        19.2519,
+        42.359402
+    ],
+    "Kenneth Kaunda International Airport Lusaka": [
+        28.45260048,
+        -15.33080006
+    ],
+    "Pointe-à-Pitre Le Raizet": [
+        -61.531799,
+        16.265301
+    ],
+    "Andrews Air Force Base": [
+        -76.866997,
+        38.810799
+    ],
+    "João Paulo II Airport": [
+        -25.69790077,
+        37.74119949
+    ],
+    "Nnamdi Azikiwe International Airport": [
+        7.263169765,
+        9.006790161
+    ],
+    "Joplin Regional Airport": [
+        -94.49829865,
+        37.15179825
+    ],
+    "Adana Airport": [
+        35.28039932,
+        36.98220062
+    ],
+    "Karlsruhe Baden-Baden Airport": [
+        8.080499649,
+        48.77939987
+    ],
+    "Guilin Liangjiang International Airport": [
+        110.0390015,
+        25.21809959
+    ],
+    "Chongqing Jiangbei International Airport": [
+        106.6419983,
+        29.71920013
+    ],
+    "Kaohsiung International Airport": [
+        120.3499985,
+        22.57710075
+    ],
+    "King Fahd International Airport": [
+        49.79790115,
+        26.47120094
+    ],
+    "Tashkent International Airport": [
+        69.28119659,
+        41.25790024
+    ],
+    "Damascus International Airport": [
+        36.5155983,
+        33.41149902
+    ],
+    "Hangzhou Xiaoshan International Airport": [
+        120.4339981,
+        30.22949982
+    ],
+    "Tirana International Airport Mother Teresa": [
+        19.72060013,
+        41.41469955
+    ],
+    "RAF Mildenhall": [
+        0.486405998,
+        52.36190033
+    ],
+    "Zhoushuizi Airport": [
+        121.5390015,
+        38.96569824
+    ],
+    "Priština International Airport": [
+        21.035801,
+        42.5728
+    ],
+    "Kadena Air Base": [
+        127.767998,
+        26.3556
+    ],
+    "Travis Air Force Base": [
+        -121.927002,
+        38.26269913
+    ],
+    "Prince Mohammad Bin Abdulaziz Airport": [
+        39.705101,
+        24.5534
+    ],
+    "Astana International Airport": [
+        71.46690369,
+        51.02220154
+    ],
+    "Tri-State/Milton J. Ferguson Field": [
+        -82.55799866,
+        38.36669922
+    ],
+    "Sochi International Airport": [
+        39.9566,
+        43.449902
+    ],
+    "Tianjin Binhai International Airport": [
+        117.3460007,
+        39.12440109
+    ],
+    "Trabzon International Airport": [
+        39.78969955,
+        40.99509811
+    ],
+    "Wright-Patterson Air Force Base": [
+        -84.0483017,
+        39.8260994
+    ],
+    "Yokota Air Base": [
+        139.3480072,
+        35.74850082
+    ],
+    "Nanjing Lukou Airport": [
+        118.8619995,
+        31.74200058
+    ],
+    "RAF Brize Norton": [
+        -1.58362,
+        51.75
+    ],
+    "Hasanuddin International Airport": [
+        119.5540009,
+        -5.061629772
+    ],
+    "Shiraz Shahid Dastghaib International Airport": [
+        52.58980179,
+        29.53919983
+    ],
+    "Baghdad International Airport": [
+        44.23460007,
+        33.26250076
+    ],
+    "Luleå Airport": [
+        22.12199974,
+        65.54380035
+    ],
+    "Ramstein Air Base": [
+        7.600279808,
+        49.43690109
+    ],
+    "Tolmachevo Airport": [
+        82.65070343,
+        55.01259995
+    ],
+    "King Shaka International Airport": [
+        31.11972222,
+        -29.61444444
+    ],
+    "Enfidha - Hammamet International Airport": [
+        10.438611,
+        36.075833
+    ],
+    "Sri Guru Ram Dass Jee International Airport": [
+        74.79730225,
+        31.70960045
+    ],
+    "Mandalay International Airport": [
+        95.97789764,
+        21.70219994
+    ],
+    "Scott AFB/Midamerica Airport": [
+        -89.835197,
+        38.5452
+    ],
+    "McChord Air Force Base": [
+        -122.4759979,
+        47.13769913
+    ],
+    "Rarotonga International Airport": [
+        -159.8059998,
+        -21.20269966
+    ],
+    "Koltsovo Airport": [
+        60.80270004,
+        56.74309921
+    ],
+    "Val de Cans/Júlio Cezar Ribeiro International Airport": [
+        -48.47629929,
+        -1.37925005
+    ],
+    "Yaoqiang Airport": [
+        117.2160034,
+        36.85720062
+    ],
+    "George Airport": [
+        22.378902,
+        -34.0056
+    ],
+    "Port Moresby Jacksons International Airport": [
+        147.2200012,
+        -9.443380356
+    ],
+    "Mashhad International Airport": [
+        59.64099884,
+        36.23519897
+    ],
+    "Governador Aluízio Alves International Airport": [
+        -35.376111,
+        -5.768056
+    ],
+    "Range Regional Airport": [
+        -92.83899689,
+        47.38660049
+    ],
+    "Odessa International Airport": [
+        30.67650032,
+        46.42679977
+    ],
+    "Zhengzhou Xinzheng International Airport": [
+        113.8410034,
+        34.5196991
+    ],
+    "Calicut International Airport": [
+        75.95529938,
+        11.13679981
+    ],
+    "Dover Air Force Base": [
+        -75.46600342,
+        39.12950134
+    ],
+    "Juba International Airport": [
+        31.60110092,
+        4.872010231
+    ],
+    "Taiping Airport": [
+        126.25,
+        45.62340164
+    ],
+    "Ürümqi Diwopu International Airport": [
+        87.47419739,
+        43.90710068
+    ],
+    "Simferopol International Airport": [
+        33.97510147,
+        45.05220032
+    ],
+    "Zvartnots International Airport": [
+        44.39590073,
+        40.14730072
+    ],
+    "Kagoshima Airport": [
+        130.7189941,
+        31.80340004
+    ],
+    "Erzurum International Airport": [
+        41.17020035,
+        39.95650101
+    ],
+    "Taoxian Airport": [
+        123.4830017,
+        41.63980103
+    ],
+    "Osan Air Base": [
+        127.029999,
+        37.090599
+    ],
+    "RAF Lakenheath": [
+        0.56099999,
+        52.40930176
+    ],
+    "Mac Dill Air Force Base": [
+        -82.52120209,
+        27.84930038
+    ],
+    "Al Maktoum International Airport": [
+        55.161389,
+        24.896356
+    ],
+    "Francisco Bangoy International Airport": [
+        125.6460037,
+        7.125520229
+    ],
+    "Tabriz International Airport": [
+        46.23500061,
+        38.13389969
+    ],
+    "Taiyuan Wusu Airport": [
+        112.6279984,
+        37.74689865
+    ],
+    "Ningbo Lishe International Airport": [
+        121.461998,
+        29.82670021
+    ],
+    "Sanya Phoenix International Airport": [
+        109.4120026,
+        18.30290031
+    ],
+    "Khabarovsk-Novy Airport": [
+        135.1880035,
+        48.52799988
+    ],
+    "Barksdale Air Force Base": [
+        -93.66269684,
+        32.50180054
+    ],
+    "Edwards Air Force Base": [
+        -117.884003,
+        34.905399
+    ],
+    "Langley Air Force Base": [
+        -76.36049652,
+        37.082901
+    ],
+    "Tinker Air Force Base": [
+        -97.38659668,
+        35.41469955
+    ],
+    "Tyndall Air Force Base": [
+        -85.57540131,
+        30.06959915
+    ],
+    "Robins Air Force Base": [
+        -83.59190369,
+        32.64009857
+    ],
+    "Kualanamu International Airport": [
+        98.885278,
+        3.642222
+    ],
+    "Mallam Aminu International Airport": [
+        8.52462,
+        12.0476
+    ],
+    "Fuzhou Changle International Airport": [
+        119.663002,
+        25.93510056
+    ],
+    "King Abdulaziz Air Base": [
+        50.15200043,
+        26.26539993
+    ],
+    "General José Antonio Anzoategui International Airport": [
+        -64.692222,
+        10.111111
+    ],
+    "Haikou Meilan International Airport": [
+        110.4589996,
+        19.93490028
+    ],
+    "Altus Air Force Base": [
+        -99.26670074,
+        34.667099
+    ],
+    "Gaziantep International Airport": [
+        37.47869873,
+        36.94720078
+    ],
+    "Kazan International Airport": [
+        49.27870178,
+        55.60620117
+    ],
+    "Yemelyanovo Airport": [
+        92.493301,
+        56.172901
+    ],
+    "Holloman Air Force Base": [
+        -106.1070023,
+        32.85250092
+    ],
+    "Columbus Air Force Base": [
+        -88.44380188,
+        33.64379883
+    ],
+    "Luke Air Force Base": [
+        -112.3830032,
+        33.53499985
+    ],
+    "Dobbins Air Reserve Base": [
+        -84.51629639,
+        33.91540146
+    ],
+    "Fairchild Air Force Base": [
+        -117.6559982,
+        47.61510086
+    ],
+    "RAF Akrotiri": [
+        32.9879,
+        34.590401
+    ],
+    "Kurumoch International Airport": [
+        50.16429901,
+        53.50490189
+    ],
+    "Aleppo International Airport": [
+        37.22439957,
+        36.18069839
+    ],
+    "Randolph Air Force Base": [
+        -98.27890015,
+        29.52969933
+    ],
+    "Cannon Air Force Base": [
+        -103.3219986,
+        34.38280106
+    ],
+    "Laughlin Air Force Base": [
+        -100.7779999,
+        29.35950089
+    ],
+    "RAF Fairford": [
+        -1.790030003,
+        51.68220139
+    ],
+    "Dominique Edward Osok Airport": [
+        131.287,
+        -0.894
+    ],
+    "Laguindingan Airport": [
+        124.456496,
+        8.612203
+    ],
+    "Basrah International Airport": [
+        47.66210175,
+        30.54910088
+    ],
+    "Ovda International Airport": [
+        34.93579865,
+        29.94029999
+    ],
+    "Kharkiv International Airport": [
+        36.29000092,
+        49.92480087
+    ],
+    "Ufa International Airport": [
+        55.87440109,
+        54.55749893
+    ],
+    "Baita International Airport": [
+        111.823997,
+        40.851398
+    ],
+    "Süleyman Demirel International Airport": [
+        30.36840057,
+        37.85540009
+    ],
+    "Dyess Air Force Base": [
+        -99.854599,
+        32.42079926
+    ],
+    "Mountain Home Air Force Base": [
+        -115.872002,
+        43.043598
+    ],
+    "Shaw Air Force Base": [
+        -80.47059631,
+        33.97269821
+    ],
+    "Longdongbao Airport": [
+        106.8010025,
+        26.53849983
+    ],
+    "Wenzhou Longwan International Airport": [
+        120.851997,
+        27.912201
+    ],
+    "Cotopaxi International Airport": [
+        -78.615799,
+        -0.906833
+    ],
+    "Sialkot Airport": [
+        74.3638916,
+        32.53555679
+    ],
+    "Sary-Arka Airport": [
+        73.33439636,
+        49.67079926
+    ],
+    "Cheongju International Airport/Cheongju Air Base (K-59/G-513)": [
+        127.498741,
+        36.717008
+    ],
+    "Vance Air Force Base": [
+        -97.91649628,
+        36.33919907
+    ],
+    "Vandenberg Air Force Base": [
+        -120.5839996,
+        34.73730087
+    ],
+    "Beale Air Force Base": [
+        -121.4369965,
+        39.13610077
+    ],
+    "Grissom Air Reserve Base": [
+        -86.15209961,
+        40.64810181
+    ],
+    "Beijing Nanyuan Airport": [
+        116.3880005,
+        39.78279877
+    ],
+    "Nouakchott–Oumtounsy International Airport": [
+        -15.9697222,
+        18.31
+    ],
+    "Akwa Ibom International Airport": [
+        8.093,
+        4.8725
+    ],
+    "Kunsan Air Base": [
+        126.6159973,
+        35.90380096
+    ],
+    "Nanning Wuxu Airport": [
+        108.1719971,
+        22.60829926
+    ],
+    "Changsha Huanghua International Airport": [
+        113.2200012,
+        28.18919945
+    ],
+    "Bassel Al-Assad International Airport": [
+        35.94869995,
+        35.40110016
+    ],
+    "Sir Charles Gaetan Duval Airport": [
+        63.361,
+        -19.7577
+    ],
+    "Seymour Johnson Air Force Base": [
+        -77.96060181,
+        35.33940125
+    ],
+    "Whiteman Air Force Base": [
+        -93.54789734,
+        38.7303009
+    ],
+    "Kinmen Airport": [
+        118.359001,
+        24.4279
+    ],
+    "İstanbul New Airport": [
+        28.74133,
+        41.262948
+    ],
+    "Diass-Thies Blaise Diagne International Airport": [
+        -17.07333333,
+        14.67
+    ],
+    "Grozny North Airport": [
+        45.698601,
+        43.388302
+    ],
+    "Mt. Fuji Shizuoka Airport": [
+        138.1877518,
+        34.79604347
+    ],
+    "[Duplicate] Pic": [
+        -4.586792,
+        55.505694
+    ],
+    "Platov International Airport": [
+        39.924722,
+        47.493888
+    ],
+    "Avord (BA 702) Air Base": [
+        2.6325,
+        47.053299
+    ],
+    "Ukrainka Air Base": [
+        128.445007,
+        51.169997
+    ],
+    "New Islamabad International Airport": [
+        72.851613,
+        33.560713
+    ],
+    "Lipetsk Air Base": [
+        39.44499969,
+        52.63499832
+    ],
+    "Olenya Air Base": [
+        33.46390152,
+        68.15180206
+    ],
+    "Zhukovsky International Airport": [
+        38.150002,
+        55.553299
+    ],
+    "Borisoglebskoye Airport": [
+        49.13330078,
+        55.86669922
+    ],
+    "Mattala Rajapaksa International Airport": [
+        81.124128,
+        6.284467
+    ],
+    "atl": [
+        -84.375,
+        33.137551
+    ],
+    "Cyll": [
+        -110.072021,
+        53.310365
+    ],
+    "Rustaq Airport": [
+        57.4875,
+        23.640556
+    ],
+    "Duqm International Airport": [
+        57.634167,
+        19.501944
+    ],
+    "Northern Cagayan International Airport": [
+        121.745853,
+        18.182388
+    ],
+    "Muan International Airport": [
+        126.382814,
+        34.991406
+    ],
+    "Mar de Cortés International Airport": [
+        -113.305864,
+        31.351621
+    ],
+    "Sungai Siring International Airport": [
+        117.255556,
+        -0.373611
+    ],
+    "Çukurova Airport": [
+        35.069381,
+        36.895545
+    ]
+}
