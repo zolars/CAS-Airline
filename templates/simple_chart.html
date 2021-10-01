@@ -1,101 +1,110 @@
 {% import 'macro' as macro %}
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>{{ chart.page_title }}</title>
     <style type="text/css">
-        #card {
-            position: absolute;
-            bottom: 40px;
-            left: 40px;
-            width: 370px;
-            height: 250px;
-            border: 1px dashed #164aa4;
-            background-color: #cce3ff;
-            text-align: center;
-            z-index: 100;
-        }
+      #card {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+        width: 370px;
+        height: 250px;
+        border: 1px dashed #164aa4;
+        background-color: #cce3ff;
+        text-align: center;
+        z-index: 100;
+      }
 
-        .left {
-            float: left;
-            width: 100px;
-            height: 100px;
-            margin-right: -100%;
-        }
+      .left {
+        float: left;
+        width: 100px;
+        height: 100px;
+        margin-right: -100%;
+      }
 
-        .right {
-            float: right;
-            width: 100%;
-        }
+      .right {
+        float: right;
+        width: 100%;
+      }
 
-        .right-content {
-            height: 100%;
-            margin-left: 100px;
-            background-color: #cce3ff;
-        }
+      .right-content {
+        height: 100%;
+        margin-left: 100px;
+        background-color: #cce3ff;
+      }
     </style>
     {{ macro.render_chart_dependencies(chart) }}
-</head>
+  </head>
 
-<body bgcolor="#F0E8CD">
-    <div id="card" style="display:none;">
-        <div style="margin: 1em;">
-            <div class="left">
-                <img id="picture" src="\templates\image\Tom.png" width="100%">
-            </div>
-            <div class="right">
-                <div class="right-content">
-                    <b id="name">Name</b>
-                    <div style="margin: 1em 1em 1em 2em;">
-                        <div style="float: left; width: 50%;">
-                            <p style="font-size:70%" align="left">国籍</p>
-                            <p style="font-size:70%" align="left" id="nation">nation</p>
-                            <p style=" font-size:70%" align="left">性别</p>
-                            <p style="font-size:70%" align="left" id="sex">sex</p>
-                            <p style=" font-size:70%" align="left">出生日期</p>
-                            <p style="font-size:70%" align="left" id="birth">birthday</p>
-                        </div>
-                        <div style=" float: right;  width: 50%;">
-                            <p style="font-size:70%" align="left">公司</p>
-                            <p style="font-size:70%" align="left" id="company">company</p>
-                            <p style=" font-size:70%" align="left">住所</p>
-                            <p style="font-size:70%" align="left" id="address">address</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <body bgcolor="#F0E8CD">
+    <div id="card" style="display: none">
+      <div style="margin: 1em">
+        <div class="left">
+          <img id="picture" src="\templates\image\Tom.png" width="100%" />
         </div>
-
+        <div class="right">
+          <div class="right-content">
+            <b id="name">Name</b>
+            <div style="margin: 1em 1em 1em 2em">
+              <div style="float: left; width: 50%">
+                <p style="font-size: 70%" align="left">国籍</p>
+                <p style="font-size: 70%" align="left" id="nation">nation</p>
+                <p style="font-size: 70%" align="left">性别</p>
+                <p style="font-size: 70%" align="left" id="sex">sex</p>
+                <p style="font-size: 70%" align="left">出生日期</p>
+                <p style="font-size: 70%" align="left" id="birth">birthday</p>
+              </div>
+              <div style="float: right; width: 50%">
+                <p style="font-size: 70%" align="left">公司</p>
+                <p style="font-size: 70%" align="left" id="company">company</p>
+                <p style="font-size: 70%" align="left">住所</p>
+                <p style="font-size: 70%" align="left" id="address">address</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
 
     {{ macro.render_chart_content(chart) }}
 
     <script src=" templates\data.js"></script>
 
     <script>
-        chart_airline.on('legendselectchanged', function (param) {
-            var selectedName = param.name;
-            if (selectedName == document.getElementById("name").innerHTML.split(";")[4] && document.getElementById("card").style.display == "block")
-                document.getElementById("card").style.display = "none"
-            else
-                for (i = 0; i < data.length; i++)
-                    if (selectedName == data[i].name) {
-                        document.getElementById("card").style.display = "block"
-                        document.getElementById("picture").setAttribute("src", "templates/image/" + data[i].name + ".png");
-                        document.getElementById("name").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;" + data[i].name;
-                        document.getElementById("nation").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;" + data[i].nation;
-                        document.getElementById("sex").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;" + data[i].sex;
-                        document.getElementById("birth").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;" + data[i].birth;
-                        document.getElementById("company").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;" + data[i].company;
-                        document.getElementById("address").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;" + data[i].address;
-                    }
-
-        })
+      chart_airline.on("legendselectchanged", function (param) {
+        var selectedName = param.name;
+        if (
+          selectedName ==
+            document.getElementById("name").innerHTML.split(";")[4] &&
+          document.getElementById("card").style.display == "block"
+        )
+          document.getElementById("card").style.display = "none";
+        else
+          for (i = 0; i < data.length; i++)
+            if (selectedName == data[i].name) {
+              document.getElementById("card").style.display = "block";
+              document
+                .getElementById("picture")
+                .setAttribute(
+                  "src",
+                  "templates/image/" + data[i].name + ".png"
+                );
+              document.getElementById("name").innerHTML =
+                "&nbsp;&nbsp;&nbsp;&nbsp;" + data[i].name;
+              document.getElementById("nation").innerHTML =
+                "&nbsp;&nbsp;&nbsp;&nbsp;" + data[i].nation;
+              document.getElementById("sex").innerHTML =
+                "&nbsp;&nbsp;&nbsp;&nbsp;" + data[i].sex;
+              document.getElementById("birth").innerHTML =
+                "&nbsp;&nbsp;&nbsp;&nbsp;" + data[i].birth;
+              document.getElementById("company").innerHTML =
+                "&nbsp;&nbsp;&nbsp;&nbsp;" + data[i].company;
+              document.getElementById("address").innerHTML =
+                "&nbsp;&nbsp;&nbsp;&nbsp;" + data[i].address;
+            }
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
